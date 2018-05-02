@@ -20,14 +20,14 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   ;
   color: #341C09;
   ;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   ;
   text-align: center;
   border-bottom: 1px solid #bbb;
@@ -59,6 +59,6 @@ header img {
 }
 
 footer {
-  font-size: .85em;
+  font-size: .85rem;
   ;
 }
