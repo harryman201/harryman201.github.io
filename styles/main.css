@@ -16,7 +16,7 @@ body {
   ;
   color: #B85B14;
   ;
-  background-color: #D4E4F7;
+  background-color: #F7E9D4;
 }
 
 h1 {
@@ -46,7 +46,7 @@ header,
 footer,
 footer a {
   text-align: center;
-  background-color: #236AB9;
+  background-color: #FC9803;
   ;
   color: #341C09;
 }
@@ -61,4 +61,7 @@ header img {
 footer {
   font-size: .85rem;
   ;
+}
+.futurelink {
+  color: grey;
 }
