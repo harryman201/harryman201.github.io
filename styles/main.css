@@ -14,9 +14,10 @@ body {
   line-height: 32px;
   font-family: monospace, sans-serif;
   ;
-  color: #FC9803;
+  color: #eb8d00;
   ;
   background-color: #F7E9D4;
+  text-shadow: 1px 1px black;
 }
 
 h1 {
@@ -49,6 +50,8 @@ footer a {
   background-color: #FC9803;
   ;
   color: #341C09;
+  ;
+  text-shadow: none;
 }
 
 header img {
@@ -64,4 +67,7 @@ footer {
 }
 .futurelink {
   color: grey;
+}
+a {
+  text-shadow: none;
 }
