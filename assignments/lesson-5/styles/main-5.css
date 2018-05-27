@@ -31,16 +31,18 @@ footer {
 }
 
 header {
-  justify-content: center;
   text-align: center;
 }
 
 header h1 {
+  margin: 0;
   font-family: "moon-regular";
   font-size: 2rem;
 }
 
-header img {}
+header img {
+  flex-shrink: 2;
+}
 
 header .subheading {}
 
@@ -166,9 +168,6 @@ article p {
   margin: 2rem 1rem;
 }
 
-.small-view-container {
-  display: flex;
-}
 
 .ten-day-forecast {
   display: none;

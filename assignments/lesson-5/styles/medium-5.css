@@ -4,6 +4,12 @@
     font-size: 1.18rem;
   }
 
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   nav button {
     display: none;
   }
