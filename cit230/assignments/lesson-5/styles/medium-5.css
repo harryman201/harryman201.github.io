@@ -1,0 +1,51 @@
+@media only screen and (min-width: 37.5em) {
+
+  body {
+    font-size: 1.18rem;
+  }
+
+  nav button {
+    display: none;
+  }
+  main h2 {
+    ;
+    font-size: 3.8rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  section.ten-day-forecast {
+    display: block;
+  }
+  section.three-day-forecast {
+    display: none;
+  }
+  .main-heading p {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    width: 20%;
+  }
+  nav ul li a {
+    padding: 8px 0;
+  }
+  .highlow,
+  .conditions {
+    width: 32%;
+  }
+  .morning,
+  .afternoon,
+  .evening {
+    display: block;
+    width: 14%;
+  }
+
+  article img {
+    float: right;
+    padding: 12px;
+    width: 50%;
+  }
+}
