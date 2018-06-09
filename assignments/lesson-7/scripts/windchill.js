@@ -9,3 +9,4 @@ var windchill = 35.74 + 0.6215 * tavg - 35.75 * Math.pow(ws, .16) + 0.4275 * tav
 
 
 document.getElementById("windchill").innerHTML = Math.round(windchill);
+document.getElementById("windchill").innerHTML = high;
