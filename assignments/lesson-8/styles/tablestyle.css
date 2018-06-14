@@ -1,0 +1,44 @@
+table {
+  font-family: "Ubuntu";
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+th,
+#novtotal {
+  background-color: #628ca6;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+tr:first-child {
+  background-color: #7fb9c2;
+}
+
+thead td {
+  font-size: 1.6rem;
+  padding: 6px;
+}
+
+tbody td,
+th {
+  padding: 8px;
+}
+
+tfoot td {
+  font-size: 12px;
+  padding: 4px;
+}
