@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Franklin town weather forecast | weather report | current news and weather">
+  <meta name="author" content="Harrison Bateman">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/medium.css">
+  <link rel="stylesheet" href="../styles/large.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <title>Franklin Current Weather | 10-Day Forecast | News</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="../images/won-logo.jpg" alt="Company Logo">
+    <div class="header-container">
+      <h1>Weather or Not</h1>
+      <div class="subheading">Helping you decide to wear shorts or a sweater!</div>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="navList" class="hide">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="#">Greenville</a></li>
+      <li><a href="#">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="main-heading">
+      <figure>
+        <h2>Gallery</h2>
+        <img src="../images/pictures/gallerymain/gallerycover600.jpg" alt="Picture of a beachscape" sizes="100vw" srcset="../images/pictures/gallerymain/gallerycover600.jpg 600w, ../images/pictures/gallerymain/gallerycover1024.jpg 1024w, ../images/pictures/gallerymain/gallerycover1300.jpg 1300w ">
+      </figure>
+    </div>
+    <div class="grid-container ">
+      <div class="grid-item ">
+        <img src="../images/gallery/cloudyday500.jpg " alt="A picture of clouds in the blue sky ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+      <div class="grid-item ">
+        <img src="../images/gallery/foggyday500.jpg " alt="A picture of a foggy road ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+      <div class="grid-item ">
+        <img src="../images/gallery/frozenbubble500.jpg " alt="A picture of a frozen bubble stuck to a branch ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+      <div class="grid-item ">
+        <img src="../images/gallery/lightningstorm500.jpg " alt="A picture of a lightning storm in the sky ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+      <div class="grid-item ">
+        <img src="../images/gallery/rainyday500.jpg " alt="A picture of a cityscape in the rain ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+      <div class="grid-item ">
+        <img src="../images/gallery/winterday500.jpg " alt="A picture of a winter day with fresh snow ">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis.
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <section class="contact ">
+      <h2>contact information</h2>
+      Weather or Not<br> (208) 589-4402<br> 123 Main St. Anytown<br> US 99999 Google Map
+    </section>
+    <section class="footer-bar ">
+      <h2>Legal</h2>
+      &copy;2018 | Weather or Not | <span id="currentdate">Current Date</span>
+    </section>
+  </footer>
+
+  <script src="../scripts/hamburger.js "></script>
+  <script src="../scripts/currentdate.js "></script>
+</body>
+
+</html>

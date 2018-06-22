@@ -1,0 +1,115 @@
+@media only screen and (min-width: 37.5em) {
+
+  body {
+    font-size: 1.18rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav button {
+    display: none;
+  }
+  main h2 {
+    ;
+    font-size: 3.8rem;
+  }
+  header h1 {
+    font-size: 4rem;
+  }
+  section.ten-day-forecast {
+    display: flex;
+    flex-direction: column;
+  }
+  section.three-day-forecast {
+    display: none;
+  }
+  .main-heading p {
+    font-size: 1.8rem;
+  }
+  nav ul.hide {
+    display: flex;
+  }
+  nav ul li {
+    width: 20%;
+  }
+  nav ul li a {
+    padding: 8px 0;
+    ;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .highlow,
+  .conditions {
+    width: 32%;
+  }
+  .afternoon {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .news-container {
+    overflow: hidden;
+  }
+
+  article {
+    padding: .5rem;
+  }
+
+  article:hover {
+    box-shadow: 2px 2px 10px gray;
+  }
+
+
+  article img {
+    float: right;
+    ;
+    margin: 6px 2%;
+    width: 40%;
+    ;
+  }
+
+  article .left {
+    float: left;
+    ;
+    margin: 6px 2%;
+    width: 40%;
+    ;
+  }
+  article h3 {
+    margin: 1.5rem 0 1rem 0
+  }
+
+  .flexcontainer {
+    display: flex;
+  }
+  .flexcontainer .news-container {
+    width: 50%;
+  }
+  .flexcontainer img {
+    width: 100%;
+  }
+  .containerone {
+    width: 50%;
+  }
+  .afternoon img {
+    width: 40%;
+  }
+
+  .radioblock {
+    float: none;
+    display: flex;
+  }
+  label {
+    display: inline-block;
+  }
+
+  /*  Gallery CSS*/
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
