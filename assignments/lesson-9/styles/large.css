@@ -12,11 +12,9 @@
   }
   .forecast-container {
     display: flex;
-  }
-  .table-top,
-  .table-bottom {
     flex-direction: row;
   }
+
   .highlow,
   .conditions {
     width: 35%;
