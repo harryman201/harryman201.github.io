@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Franklin town weather forecast | weather report | current news and weather">
+  <meta name="author" content="Harrison Bateman">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/medium.css">
+  <link rel="stylesheet" href="../styles/large.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <title>Franklin Current Weather | 10-Day Forecast | Franklin News</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="../images/won-logo.jpg" alt="Company Logo">
+    <div class="header-container">
+      <h1>Weather or Not</h1>
+      <div class="subheading">Helping you decide to wear shorts or a sweater!</div>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="navList" class="hide">
+      <li class="navactive"><a href="../index.html">Home</a></li>
+      <li class="navactive active"><a href="franklin.html">Franklin</a></li>
+      <li class="navactive"><a href="greenville.html">Greenville</a></li>
+      <li class="navactive"><a href="springfield.html">Springfield</a></li>
+      <li class="navactive"><a href="stormcenter.html">Storm Center</a></li>
+      <li class="navactive"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="main-heading">
+      <figure>
+
+        <h2>The Town of Franklin</h2>
+        <img src="../images/franklin/franklin1024.jpg" alt="Picture of the landscape of the town of Franklin" sizes="100vw" srcset="../images/franklin/franklin600.jpg 600w, ../images/franklin/franklin1024.jpg 1024w, ../images/franklin/franklin1300.jpg 1300w">
+      </figure>
+      <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>
+      <p>Current Conditions: <span id="condition"></span></p>
+    </div>
+
+    <section class="weather-summary">
+      <h2>Weather Summary</h2>
+      <div class="highlow">
+        <p><span class="emphasis">High:</span> <span id="high-temp">64</span>&deg;F</p>
+        <p><span class="emphasis">Low:</span> <span id="low-temp">31</span>&deg;F</p>
+      </div>
+
+      <div class="afternoon">
+        <picture>
+          <img id="icon" src="#" alt="Icon of the current weather">
+        </picture>
+      </div>
+
+      <div class="conditions">
+        <p><span class="emphasis">Precipitation:</span> 10%</p>
+        <p><span class="emphasis">Wind Speed:</span> <span id="windspeed"></span> mph</p>
+      </div>
+
+    </section>
+
+    <section class="three-day-forecast">
+      <h3>Three Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20&deg;C</td>
+            <td>21&deg;C</td>
+            <td>24&deg;C</td>
+          </tr>
+          <tr>
+            <td><img src="../images/icons/sunny.png" alt="Icon of tomorrow's weather"></td>
+            <td><img src="../images/icons/rain.png" alt="Icon of the weather in 2 days time"></td>
+            <td><img src="../images/icons/rain.png" alt="Icon of the weather in 3 days time"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section class="ten-day-forecast">
+      <h3>Ten Day Forecast</h3>
+
+      <div class="forecast-container">
+        <table class="table-top">
+          <thead>
+            <tr>
+              <th>Day 1</th>
+              <th>Day 2</th>
+              <th>Day 3</th>
+              <th>Day 4</th>
+              <th>Day 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20&deg;C</td>
+              <td>21&deg;C</td>
+              <td>24&deg;C</td>
+              <td>18&deg;C</td>
+              <td>12&deg;C</td>
+            </tr>
+            <tr>
+              <td><img src="../images/icons/sunny.png" alt="Icon of the weather in 1 days time"></td>
+              <td><img src="../images/icons/rain.png" alt="Icon of the weather in 2 days time"></td>
+              <td><img src="../images/icons/rain.png" alt="Icon of the weather in 3 days time"></td>
+              <td><img src="../images/icons/storm.png" alt="Icon of the weather in 4 days time"></td>
+              <td><img src="../images/icons/snow.png" alt="Icon of the weather in 5 days time"></td>
+          </tbody>
+        </table>
+        <table class="table-bottom">
+          <thead>
+            <tr>
+              <th>Day 6</th>
+              <th>Day 7</th>
+              <th>Day 8</th>
+              <th>Day 9</th>
+              <th>Day 10</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>15&deg;C</td>
+              <td>17&deg;C</td>
+              <td>21&deg;C</td>
+              <td>22&deg;C</td>
+              <td>18&deg;C</td>
+            </tr>
+            <tr>
+              <td><img src="../images/icons/sunny.png" alt="Icon of the weather in 6 days time"></td>
+              <td><img src="../images/icons/sunny.png" alt="Icon of the weather in 7 days time"></td>
+              <td><img src="../images/icons/sunny.png" alt="Icon of the weather in 8 days time"></td>
+              <td><img src="../images/icons/partly-cloudy.png" alt="Icon of the weather in 9 days time"></td>
+              <td><img src="../images/icons/partly-cloudy.png" alt="Icon of the weather in 10 days time"></td>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <article>
+      <h3>Forest Fires Still Run Wild</h3>
+      <div class="news-container">
+        <img src="../images/franklin/forest-fire.jpg" alt="Picture of a forest on fire">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis. Aenean mollis mattis malesuada. Suspendisse elit tortor, vehicula non laoreet viverra, fermentum in risus. Curabitur ut tortor dolor. Pellentesque tortor lacus, vehicula iaculis orci in, sagittis fringilla massa. Quisque pretium mollis luctus. Nam ut rutrum augue. Sed at lacus finibus, tincidunt diam ac, pretium ipsum. Mauris quis justo odio. Proin dui lacus, condimentum iaculis lacinia vitae, feugiat non ligula. Nulla euismod arcu in libero pellentesque, sit amet suscipit lectus condimentum. Morbi sodales varius turpis nec aliquam.</p>
+
+        <p>Nulla varius leo vel turpis bibendum malesuada. Aliquam tincidunt convallis iaculis. Suspendisse quis feugiat nisi. Suspendisse hendrerit hendrerit eros, eu vestibulum risus lacinia eu. Praesent congue volutpat urna. Donec semper leo quis metus sagittis rhoncus. Sed et ante tincidunt, vulputate purus a, interdum enim. Cras porttitor sem vel felis molestie maximus. Etiam egestas eleifend sagittis. Sed erat ante, vehicula vel ante ac, finibus congue mi. Vestibulum consectetur gravida magna, vitae venenatis lorem. Sed massa nibh, eleifend vel gravida non, mattis sit amet lacus. In posuere tincidunt facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+        <p>Phasellus nec sem mi. Nunc condimentum felis quis porta dapibus. Aenean faucibus, sem nec fermentum bibendum, mi nunc finibus nisi, vitae placerat urna enim sit amet felis. Donec eu consectetur nunc, sed dignissim orci. Proin eget quam a ipsum dapibus venenatis quis euismod erat. Nullam et tortor eget sem varius blandit feugiat non purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vestibulum sed velit congue facilisis. Quisque molestie bibendum orci, id dapibus massa dignissim vel. Nunc pretium vitae massa bibendum condimentum. Pellentesque semper erat nec porttitor lobortis. Donec rhoncus elit nibh, non mollis dolor viverra id.</p>
+      </div>
+    </article>
+
+    <article>
+      <h3>Green Energy On The Rise</h3>
+      <div class="news-container">
+        <img src="../images/franklin/solar-panels.jpg" alt="Picture of solar panels">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies accumsan dolor, vel faucibus risus fermentum at. Vivamus sagittis rhoncus dolor vel hendrerit. Integer ac mauris pharetra, euismod nulla vel, fringilla turpis. Aenean mollis mattis malesuada. Suspendisse elit tortor, vehicula non laoreet viverra, fermentum in risus. Curabitur ut tortor dolor. Pellentesque tortor lacus, vehicula iaculis orci in, sagittis fringilla massa. Quisque pretium mollis luctus. Nam ut rutrum augue. Sed at lacus finibus, tincidunt diam ac, pretium ipsum. Mauris quis justo odio. Proin dui lacus, condimentum iaculis lacinia vitae, feugiat non ligula. Nulla euismod arcu in libero pellentesque, sit amet suscipit lectus condimentum. Morbi sodales varius turpis nec aliquam.</p>
+
+        <p>Nulla varius leo vel turpis bibendum malesuada. Aliquam tincidunt convallis iaculis. Suspendisse quis feugiat nisi. Suspendisse hendrerit hendrerit eros, eu vestibulum risus lacinia eu. Praesent congue volutpat urna. Donec semper leo quis metus sagittis rhoncus. Sed et ante tincidunt, vulputate purus a, interdum enim. Cras porttitor sem vel felis molestie maximus. Etiam egestas eleifend sagittis. Sed erat ante, vehicula vel ante ac, finibus congue mi. Vestibulum consectetur gravida magna, vitae venenatis lorem. Sed massa nibh, eleifend vel gravida non, mattis sit amet lacus. In posuere tincidunt facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <section class="contact">
+      <h2>contact information</h2>
+      Weather or Not<br> (208) 589-4402<br> 123 Main St. Anytown<br> US 99999 Google Map<br> Weather Source: <a href="https://openweathermap.org">https://openweathermap.org</a>
+    </section>
+    <section class="footer-bar">
+      <h2>Legal</h2>
+      &copy;2018 | Weather or Not | <span id="currentdate">Current Date</span>
+    </section>
+  </footer>
+
+
+  <script src="../scripts/hamburger.js"></script>
+  <script src="../scripts/currentdate.js"></script>
+  <script src="../scripts/weather.js" onload="franklinWeather()"></script>
+  <script src="../scripts/wayfind.js"></script>
+
+</body>
+
+</html>

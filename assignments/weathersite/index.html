@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weather or Not | weather report | Current Weather for Franklin, Greenville, Springfield">
+  <meta name="author" content="Harrison Bateman">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet">
+
+  <title>Weather Or Not | Town Weather and Forecast | Town News</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="images/won-logo.jpg" alt="Company Logo">
+    <div class="header-container">
+      <h1>Weather or Not</h1>
+      <div class="subheading">Helping you decide to wear shorts or a sweater!</div>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="navList" class="hide">
+      <li class="navactive active"><a href="index.html">Home</a></li>
+      <li class="navactive"><a href="pages/franklin.html">Franklin</a></li>
+      <li class="navactive"><a href="pages/greenville.html">Greenville</a></li>
+      <li class="navactive"><a href="pages/springfield.html">Springfield</a></li>
+      <li class="navactive"><a href="pages/stormcenter.html">Storm Center</a></li>
+      <li class="navactive"><a href="pages/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="main-heading">
+      <figure>
+        <h2>Home</h2>
+        <img src="images/home/homepicture1024.jpg" alt="Picture of the sky on a partially cloudy day" sizes="100vw" srcset="images/home/homepicture600.jpg 600w, images/home/homepicture1024.jpg 1024w, images/home/homepicture1300.jpg 1300w">
+      </figure>
+    </div>
+
+    <article>
+      <h3>Breaking News</h3>
+      <h4>Hurricane Young Heads Toward Rexburg</h4>
+      <div class="news-container">
+        <img src="images/home/breakingnews.jpg" alt="Picture from space of hurricane Young">
+        <p>Phasellus nec sem mi. Nunc condimentum felis quis porta dapibus. Aenean faucibus, sem nec fermentum bibendum, mi nunc finibus nisi, vitae placerat urna enim sit amet felis. Donec eu consectetur nunc, sed dignissim orci. Proin eget quam a ipsum dapibus venenatis quis euismod erat. Nullam et tortor eget sem varius blandit fe ugiat non purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vestibulum sed velit congue facilisis. Quisque molestie bibendum orci, id dapibus massa dignissim vel. Nunc pretium vitae massa bibendum condimentum. Pellentesque semper erat nec porttitor lobortis. Donec rhoncus elit nibh, non mollis dolor viverra id.</p>
+        <p>Phasellus nec sem mi. Nunc condimentum felis quis porta dapibus. Aenean faucibus, sem nec fermentum bibendum, mi nunc finibus nisi, vitae placerat urna enim sit amet felis. Donec eu consectetur nunc, sed dignissim orci. Proin eget quam a ipsum dapibus venenatis quis euismod erat. Nullam et tortor eget sem varius blandit fe ugiat non purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vestibulum sed velit congue facilisis. Quisque molestie bibendum orci, id dapibus massa dignissim vel. Nunc pretium vitae massa bibendum condimentum. Pellentesque semper erat nec porttitor lobortis. Donec rhoncus elit nibh, non mollis dolor viverra id.</p>
+      </div>
+    </article>
+
+    <div class="largeview">
+      <!--Town of Franklin-->
+      <article>
+        <h3>The Town of <span class="townname"></span></h3>
+        <div class="flexcontainer">
+          <div class="news-container">
+            <img class="left" src="images/franklin/franklintown.jpg" alt="The town of Franklin just off the shore of a great lake">
+          </div>
+          <div class="containerone">
+            <p><span class="bold">Town Motto: </span><span class="motto"></span></p>
+            <p><span class="bold">Date Founded: </span><span class="yrfound"></span></p>
+            <p><span class="bold">Population: </span><span class="population"></span></p>
+            <p><span class="bold">Annual Rainfall: </span><span class="rainfall"></span> Inches</p>
+            <p class="events"><span class="underline"><span class="bold">Upcoming Events:</span></span>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!--Town of Greenville-->
+      <article>
+        <h3>The Town of <span class="townname"></span></h3>
+        <div class="flexcontainer">
+          <div class="news-container top-order">
+            <img src="images/greenville/greenvilletown.jpg" alt="The town of Greenville on the gentle slope of a hill">
+          </div>
+          <div class="containerone">
+            <p><span class="bold">Town Motto: </span><span class="motto"></span></p>
+            <p><span class="bold">Date Founded: </span><span class="yrfound"></span></p>
+            <p><span class="bold">Population: </span><span class="population"></span></p>
+            <p><span class="bold">Annual Rainfall: </span><span class="rainfall"></span> Inches</p>
+            <p class="events"><span class="underline"><span class="bold">Upcoming Events:</span></span>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!--Hidden Town-->
+      <article class="hide">
+        <h3>The Town of <span class="townname"></span></h3>
+        <div class="news-container">
+          <p><span class="bold">Town Motto: </span><span class="motto"></span></p>
+          <p><span class="bold">Date Founded: </span><span class="yrfound"></span></p>
+          <p><span class="bold">Population: </span><span class="population"></span></p>
+          <p><span class="bold">Annual Rainfall: </span><span class="rainfall"></span> Inches</p>
+          <p class="events"><span class="underline"><span class="bold">Upcoming Events:</span></span>
+          </p>
+        </div>
+      </article>
+      <!--Town of Springfield-->
+      <article>
+        <h3>The Town of <span class="townname"></span></h3>
+        <div class="flexcontainer">
+          <div class="news-container">
+            <img class="left" src="images/springfield/springfieldtownalt.jpg" alt="The town of Springfield, a town in the mountains with a prominent church">
+          </div>
+          <div class="containerone">
+            <p><span class="bold">Town Motto: </span><span class="motto"></span></p>
+            <p><span class="bold">Date Founded: </span><span class="yrfound"></span></p>
+            <p><span class="bold">Population: </span><span class="population"></span></p>
+            <p><span class="bold">Annual Rainfall: </span><span class="rainfall"></span> Inches</p>
+            <p class="events"><span class="underline"><span class="bold">Upcoming Events:</span></span>
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <section class="contact">
+      <h2>contact information</h2>
+      Weather or Not<br> (208) 589-4402<br> 123 Main St. Anytown<br> US 99999 Google Map
+    </section>
+    <section class="footer-bar">
+      <h2>Legal</h2>
+      &copy;2018 | Weather or Not | <span id="currentdate">Current Date</span>
+    </section>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/towndata.js"></script>
+  <script src="scripts/wayfind.js"></script>
+</body>
+
+</html>

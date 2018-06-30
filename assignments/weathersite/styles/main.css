@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "moon-light";
+  src: url("../../../fonts/moon-light.otf");
+}
+
+@font-face {
+  font-family: "moon-regular";
+  src: url("../../../fonts/moon-regular.otf");
+}
+
+@font-face {
+  font-family: "moon-bold";
+  src: url("../../../fonts/moon-bold.otf");
+}
+
+body {
+  font-size: 16px;
+  font-family: "moon-light";
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 1300px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "moon-regular";
+  font-size: 2rem;
+  word-spacing: -1rem;
+}
+
+
+header .subheading {
+  padding: .3rem 0;
+  word-spacing: -.25rem;
+}
+
+section h2 {
+  display: none;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  font-family: 'moon-regular';
+}
+
+form h3 {
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+article h4 {
+  font-family: 'moon-regular';
+  text-align: center;
+  font-size: 1.45rem;
+  margin-top: .35rem;
+}
+
+footer h2 {
+  display: none;
+}
+
+nav {
+  background-color: #8D8741;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav button {
+  margin: .4rem 2%;
+  ;
+  border: none;
+  ;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
+nav ul {
+  list-style-type: none;
+  ;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  ;
+  font-size: 16px;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+nav ul li {
+  width: 100%;
+  ;
+}
+
+nav ul li a {
+  padding: .8rem 0;
+  ;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  ;
+  color: black;
+  ;
+  border-top: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+nav ul li a:hover {
+  background-color: rgba(251, 238, 193, 0.37);
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+  background-color: #FBEEC1;
+  padding: 0 0 2rem 0;
+}
+
+main h2 {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  ;
+  font-family: "moon-regular";
+  font-size: 2rem;
+  text-shadow: .5px .5px 100px white;
+}
+
+
+.main-heading p {
+  color: #659DBD;
+  font-size: 1.5rem;
+  font-family: "moon-regular";
+}
+
+main figure {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+main figure img {
+  width: 100%;
+}
+
+footer {
+  background-color: #659DBD;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  ;
+  font-family: 'Raleway', sans-serif;
+}
+
+th {
+  padding: .4rem;
+}
+
+td {
+  padding: .4rem 0;
+  ;
+  border: 1px solid black;
+  background-color: #659DBD;
+  color: black;
+}
+
+
+article h3 {
+  margin: 1.5rem 0 .5rem 0;
+  ;
+  text-align: center;
+  ;
+  font-size: 2.0rem;
+  font-family: "moon-regular";
+  ;
+}
+
+article img {
+  width: 80%;
+  margin: 0 10%;
+
+}
+
+article p {
+  margin: 0;
+  padding: .7rem 1rem 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+article p .bold {
+  font-weight: 700;
+}
+
+.towninfo-container {
+  display: flex;
+}
+
+.townc1 {
+  width: 50%;
+}
+
+.townc2 {
+  width: 50%;
+}
+
+.ten-day-forecast {
+  display: none;
+  ;
+  margin: auto;
+  width: 90%;
+  ;
+  text-align: center;
+}
+
+.three-day-forecast {
+  width: 100%;
+  text-align: center;
+}
+
+.weather-summary {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  ;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.emphasis {
+  font-family: "moon-regular";
+}
+
+.highlow,
+.afternoon,
+.conditions {
+  width: 33%;
+}
+
+.afternoon img {
+  width: 50%;
+}
+
+.contact {
+  background-color: #659DBD;
+  padding: 0.3rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-bar {
+  background-color: #42677c;
+  color: black;
+  padding: 0.2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+/*Gallery CSS*/
+
+.grid-container {
+  display: grid;
+  font-family: 'Raleway', sans-serif;
+}
+
+.grid-container img {
+  width: 100%;
+}
+
+.grid-item {
+  margin: .5rem;
+  padding: 1rem;
+}
+
+/*Storm Center CSS*/
+
+.warning {
+  display: none;
+}
+
+form {
+  font-family: "Raleway";
+  text-align: right;
+}
+
+form div {
+  padding: .5rem;
+}
+
+input {
+  padding: .4rem;
+  margin: .5rem;
+}
+
+input[type=radio] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.radioblock {
+  float: left;
+}
+
+label {
+  display: block;
+  padding: 1rem;
+}
+
+.formcontainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.thankyou {
+  text-align: center;
+  padding: 10rem 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+}
+
+/*Home CSS*/
+
+.hide {
+  display: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+.containerone {
+  margin: 0 8%;
+}
+
+.top-order {
+  order: 1;
+}
