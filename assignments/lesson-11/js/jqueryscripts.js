@@ -4,6 +4,9 @@ $(function () {
   $('.coreValues').prepend("<li><strong>This is brand new!</strong></li>");
   $("<li><strong>This is also great!</strong></li>").prependTo('.coreValues');
 
+  //Logo Opacity
+  $('#alcoveLogo').css('opacity', '0.3');
+
   //box2 text color
   $('.box2 a').css('color', 'white');
 
