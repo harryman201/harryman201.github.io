@@ -4,6 +4,9 @@ $(function () {
   $('.coreValues').prepend("<li><strong>This is brand new!</strong></li>");
   $("<li><strong>This is also great!</strong></li>").prependTo('.coreValues');
 
+  //box2 text color
+  $('.box2 a').css('color', 'white');
+
   // Fill in the text fields with red
   var toggleStyle = function () {
     var inputFields = $('input[type="text"]');
