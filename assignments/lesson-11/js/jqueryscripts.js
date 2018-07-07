@@ -5,12 +5,12 @@ $(function () {
   $("<li><strong>This is also great!</strong></li>").prependTo('.coreValues');
 
   // Fill in the text fields with red
-  toggleStyle = function () {
+  var toggleStyle = function () {
     var inputFields = $('input[type="text"]');
-    if (inputFields.css('background-color') === 'rgb(255,0,0)') {
-      inputFields.css('background-color', 'rgb(255,255,255)');
+    if (inputFields.css('background-color') === 'rgb(225, 0, 0)') {
+      inputFields.css('background-color', 'rgb(225, 225, 255)');
     } else {
-      inputFields.css('background-color', 'rgb(255,0,0)');
+      inputFields.css('background-color', 'rgb(225, 0, 0)');
     }
   }
   $('#ReqAQuoteBtn').click(toggleStyle);
@@ -20,7 +20,7 @@ $(function () {
 
   function FillEmpty() {
     if (nameVal.val() == '') {
-      nameVal.val('Jone Doe')
+      nameVal.val('John Doe')
     }
   }
   $('#ReqAQuoteBtn').click(FillEmpty);
