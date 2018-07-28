@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Mountain Spoke | Bicycle Tours Parts | Bozeman Montana | Bicycle Continental Divide">
+  <meta name="author" content="Harrison Bateman">
+  <link rel="stylesheet" type="text/css" href="styles/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Candal|Sunflower:300" rel="stylesheet">
+
+
+  <title>The Mountain Spoke | Bicycle Tours Parts and Repairs | Bozeman Montana</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.jpeg" alt="Image of The Mountain Spoke logo">
+    </a>
+    <h1>The Mountain Spoke</h1>
+    <button onclick="toggleMenu()">&#9776;</button>
+  </header>
+
+  <nav>
+    <ul id="nav" class="hide">
+      <li><a href="subpages/tours/index.html">Tours</a></li>
+      <li><a href="subpages/divide/index.html">The Divide</a></li>
+      <li><a href="subpages/sales/index.html">Sales</a></li>
+      <li><a href="subpages/repairs/index.html">Repairs</a></li>
+      <li><a href="subpages/contact/index.html">Contact Us</a></li>
+      <li><a href="subpages/resources/index.html">Resources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2 class="hidden">Carousel</h2>
+      <div class="carousel-container">
+
+        <div class="slides">
+          <img src="images/carousel/cartour1024.jpg" alt="Picture of a man overlooking a mountainous scenery standing beside his biycle" sizes="100vw" srcset="images/carousel/cartour600.jpg 600w,
+                     images/carousel/cartour1024.jpg 1024w,
+                     images/carousel/cartour1200.jpg 1200w">
+          <div class="carousel-text">Come Cycle the Great Continental Divide!</div>
+        </div>
+
+        <div class="slides">
+          <img src="images/carousel/carsales1024.jpg" alt="Picture of a set of handle bars on a forest road" sizes="100vw" srcset="images/carousel/carsales600.jpg 600w,
+                     images/carousel/carsales1024.jpg 1024w,
+                     images/carousel/carsales1200.jpg 1200w">
+          <div class="carousel-text">Summer Blowout Sale on all Apparel, Equipment, and Bicycles!</div>
+        </div>
+
+        <div class="slides">
+          <img src="images/carousel/carrepair1024.jpg" alt="Close up picture of a bicycle sprocket and derailleur" sizes="100vw" srcset="images/carousel/carrepair600.jpg 600w,
+                     images/carousel/carrepair1024.jpg 1024w,
+                     images/carousel/carrepair1200.jpg 1200w">
+          <div class="carousel-text">Need Some Repairs or Just a Tune Up? Stop by Today!</div>
+        </div>
+
+        <div class="slides">
+          <img src="images/carousel/cardivide1024.jpg" alt="Picture of two bikers traveling down a dusty path with a mountaineous scenery" sizes="100vw" srcset="images/carousel/cardivide600.jpg 600w,
+                     images/carousel/cardivide1024.jpg 1024w,
+                     images/carousel/cardivide1200.jpg 1200w">
+          <div class="carousel-text">Check Out Our Amazing Guided Tours Running all Summer Long!</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What We Offer</h2>
+      <div class="grid-container">
+        <div class="container-one">
+          <div class="img-text">
+            <h3>Come Bike the Great Continental Divide!</h3>
+            <p>Bike over 750 miles through Montana's beautiful mountain ranges and into the Glacial National Park</p>
+          </div>
+          <img src="images/main/maindivide.jpg" alt="Picture of a man bicycling down a road through the rolling hills country side">
+          <a href="subpages/divide/index.html" class="button">Book Now</a>
+        </div>
+        <div class="container-two">
+          <div class="img-text">
+            <h3>Need Some New Gear?</h3>
+            <p>Over hundreds of bikes to choose from and apparel to match, we are sure to have what you're looking for</p>
+          </div>
+          <img src="images/main/mainsales.jpg" alt="Picture of a green bicycle bell on a set of handlbars">
+          <a href="subpages/sales/index.html" class="button">Buy Now</a>
+        </div>
+        <div class="container-three hide">
+          <div>
+            <form action="subpages/thanks/index.html">
+              <h3>Have a Question?<br>Get In Touch</h3>
+              <div class="left-align">
+                <p><span>&#128222; </span> (406) 228-5634</p><br>
+                <p><span>&#127968; </span> 3950 Valley Commons Drive<br> Bozeman MT</p>
+              </div>
+              <div>
+                <h3>Full Name</h3>
+                <input type="text" name="name" id="name" placeholder="John Doe..." pattern="[A-Za-z]{5,}" required>
+              </div>
+              <div>
+                <h3>Email Address</h3>
+                <input type="email" name="email" id="email" placeholder="JohnD@email.com" required>
+              </div>
+              <div class="small-form">
+                <h3>Questions or Comments</h3>
+                <textarea rows="9" cols="25" name="comment" placeholder="Add your question or comment here..."></textarea>
+              </div>
+              <div class="medium-form">
+                <h3>Questions or Comments</h3>
+                <textarea rows="8" cols="35" name="comment" placeholder="Add your question or comment here..."></textarea>
+              </div>
+              <div>
+                <input class="submit" type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container-four">
+          <div class="img-text">
+            <h3>Bike Need Some Love?</h3>
+            <p>Set up your appointment today with out highly trained technicians. We will have you on the trails in no time!</p>
+          </div>
+          <img src="images/main/mainrepair.jpg" alt="Picture of a bicycle on a lift inside a repair shop">
+          <a href="subpages/repairs/index.html" class="button">Book Now</a>
+        </div>
+        <div class="container-five">
+          <div class="img-text">
+            <h3>Need Something New?</h3>
+            <p>Come check out our guided tours that range from beginner level trail rides to downhill courses with obstacles to our sunset/evening tour.</p>
+          </div>
+          <img src="images/main/maintour.jpg" alt="Picture of a downhill biker with a full face shield helmet on">
+          <a href="subpages/tours/index.html" class="button">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h2>Contact</h2>
+        The Mountain Spoke <br>(406) 228-5634 <br> 3950 Valley Commons Drive Bozeman MT <br> US 59715
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <a href="subpages/resources/index.html">Resources</a><br>
+        <a href="#">Video</a>
+        <p>&copy;2018 | The Mountain Spoke</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts  -->
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/wayfind.js"></script>
+  <script src="scripts/carousel.js"></script>
+
+</body>
+
+</html>
